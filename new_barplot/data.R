@@ -36,19 +36,5 @@ data_for_plot$year <-
   factor(
     data_for_plot$year,
     levels = c("1952", "2007"),
-    #levels = c("2007", "1952"),
     ordered=TRUE
-  )
-
-continent_fills <- 
-  data.table(
-    continent = unique(data_for_plot$continent),
-    fill = pal_npg("nrc")(5)
-  )
-
-data_for_plot <- 
-  data_for_plot %>% 
-  merge(
-    continent_fills,
-    by = "continent"
   )
