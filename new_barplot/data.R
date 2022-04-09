@@ -35,6 +35,18 @@ data_for_plot$continent <-
 data_for_plot$year <- 
   factor(
     data_for_plot$year,
-    levels = c("1952", "2007"),
+    levels = c("2007", "1952"),
     ordered=TRUE
   )
+
+#show_col(pal_npg("nrc")(10))
+data_for_plot$continent_fill <- 
+fcase(
+  data_for_plot$continent == "Asia", "#00A087FF",
+  data_for_plot$continent == "Europe", "#8491B4FF",
+  data_for_plot$continent == "Africa", "#DC0000FF",
+  data_for_plot$continent == "Americas", "#3C5488FF",
+  data_for_plot$continent == "Oceania", "#4DBBD5FF",
+  default = NA
+)
+

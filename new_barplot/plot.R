@@ -7,9 +7,11 @@ data_for_plot %>%
     aes(
       x = continent,
       y = mean_lifeExp,
-      fill = year
+      fill = I(continent_fill),
+      color = year
     )
   ) +
+  scale_color_manual(values = c("white", "white")) +
   geom_bar(
     stat = "identity",
     position = position_dodge2(preserve = "single"),
@@ -17,10 +19,10 @@ data_for_plot %>%
     ) +
   annotation_custom(
     ggplotGrob(map_regions),
-    xmin = 3.6, 
-    xmax = 6,
-    ymin = 60,
-    ymax = 95
+    xmin = 3.5, 
+    xmax = 5.9,
+    ymin = 57,
+    ymax = 101
   ) +
   scale_x_discrete(
     expand = c(0.1, 0.1)
