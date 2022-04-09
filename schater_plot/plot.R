@@ -9,7 +9,7 @@ data_per_plot %>%
     color = qsec
   ) +
   geom_point(
-    size = 3,
+    size = 3.25,
     alpha = 0.8
   ) +
   scale_colour_gradient(
@@ -19,20 +19,19 @@ data_per_plot %>%
     ) + 
   annotate(
     "text",
-    x = 6.2,
-    y = 0.3775,
+    x = 218.5,
+    y = 33.975,
     label = t_title,
-    size = 34,
+    size = s_title,
     fontface = "bold"
   ) +
   annotate(
     "text",
-    x = 4,
-    y = 0.34,
+    x = 305,
+    y = 31.75,
     label = t_sub_title,
-    size = 12
+    size = s_s_title
   ) +
-  
   labs(
     #title = t_title,
     #subtitle = t_sub_title,

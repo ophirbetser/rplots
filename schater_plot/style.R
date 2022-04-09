@@ -144,7 +144,7 @@ point_style_heb <-
     ##legend.key.width= unit(5, 'cm'),
     
     # vertecal
-    legend.key.height= unit(3, 'cm'),
+    legend.key.height= unit(2.95, 'cm'),
     legend.key.width= unit(0.3, 'cm'),
     
     
