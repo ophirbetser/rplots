@@ -1,5 +1,5 @@
 source(here("new_barplot", "data.R"))
-source(here("new_barplot", "create_world_map.R"))
+source(here("new_barplot", "create_world_map_update.R"))
 source(here("new_barplot", "style.R"))
 
 data_for_plot %>% 
